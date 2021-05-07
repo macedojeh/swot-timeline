@@ -16,18 +16,23 @@ body {
   background: var(--primary-color);
   color: #fff;
   overflow-x: hidden;
-  padding-bottom: 50px;
 }
 
 #main-header {
   background: var(--secondary-color);
   padding: 4rem 0;
+  text-align: center;
+}
+
+#footer {
+  background: var(--secondary-color);
+  padding: 2rem 0;
+  text-align: center;
 }
 
 .container {
   max-width: var(--max-width);
   margin: 0 auto;
-  text-align: center;
 }
 
 .grid-container {
@@ -159,5 +164,10 @@ h1 {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent var(--secondary-color) transparent transparent;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
